@@ -42,8 +42,10 @@ INSTALLED_APPS = [
     'myinvitations',
 ]
 
-# INVITATIONS_ADMIN_ADD_FORM = 'myinvitations.forms.CustomInvitationAdminAddForm'
+INVITATIONS_INVITATION_MODEL = 'myinvitations.MyInvitation'
+INVITATIONS_ADMIN_ADD_FORM = 'myinvitations.forms.CustomInvitationAdminAddForm'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+SITE_ID = 1 
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

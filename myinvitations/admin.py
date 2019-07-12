@@ -13,4 +13,5 @@ class MyInvitationAdmin(InvitationAdmin):
     def key_expired(self, obj):
         return obj.key_expired()
 
+admin.site.unregister(MyInvitation)
 admin.site.register(MyInvitation, MyInvitationAdmin)
